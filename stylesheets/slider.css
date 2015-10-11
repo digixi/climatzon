@@ -10,43 +10,46 @@
     background-repeat: no-repeat;
     background-position: right 0; }
   /* line 15, /projects/middleman/climatzon/source/stylesheets/slider.scss */
-  .slider-wrapper-01 ul.slidenav {
-    list-style: none;
-    margin: 5em auto 3.125em;
-    padding: 0; }
-    /* line 20, /projects/middleman/climatzon/source/stylesheets/slider.scss */
-    .slider-wrapper-01 ul.slidenav li {
-      display: block; }
+  .slider-wrapper-01 .slidernav {
+    background: #f3f3f3; }
+    /* line 18, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+    .slider-wrapper-01 .slidernav ul {
+      list-style: none;
+      margin: 5em auto 3.125em;
+      padding: 0; }
       /* line 23, /projects/middleman/climatzon/source/stylesheets/slider.scss */
-      .slider-wrapper-01 ul.slidenav li.uk-active a .image {
-        border-color: #587fad;
-        background: #587fad; }
-      /* line 28, /projects/middleman/climatzon/source/stylesheets/slider.scss */
-      .slider-wrapper-01 ul.slidenav li a {
-        font-size: 1.125em;
-        font-weight: bold;
-        color: #3a3a3a;
-        display: block;
-        text-align: center;
-        outline: 0; }
-        /* line 34, /projects/middleman/climatzon/source/stylesheets/slider.scss */
-        .slider-wrapper-01 ul.slidenav li a .image {
-          width: 6.33333em;
-          height: 6.33333em;
-          background: #71a077;
-          margin: 0 auto 3.12628em;
-          border-radius: 50%;
-          border: 3px solid #71a077; }
+      .slider-wrapper-01 .slidernav ul li {
+        display: block; }
+        /* line 26, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+        .slider-wrapper-01 .slidernav ul li.uk-active a .image {
+          border-color: #587fad;
+          background: #587fad; }
+        /* line 31, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+        .slider-wrapper-01 .slidernav ul li a {
+          font-size: 1.125em;
+          font-weight: bold;
+          color: #3a3a3a;
+          display: block;
+          text-align: center;
+          outline: 0; }
+          /* line 37, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+          .slider-wrapper-01 .slidernav ul li a .image {
+            width: 6.33333em;
+            height: 6.33333em;
+            background: #71a077;
+            margin: 0 auto 3.12628em;
+            border-radius: 50%;
+            border: 3px solid #71a077; }
 
-/* line 46, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+/* line 50, /projects/middleman/climatzon/source/stylesheets/slider.scss */
 .slider {
   margin-top: -4px;
   border-top: 4px solid #71a077;
   position: relative; }
-  /* line 51, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+  /* line 55, /projects/middleman/climatzon/source/stylesheets/slider.scss */
   .slider .uk-overlay-panel {
     padding-left: 6.25em; }
-    /* line 53, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+    /* line 57, /projects/middleman/climatzon/source/stylesheets/slider.scss */
     .slider .uk-overlay-panel h2 {
       font-size: 3em;
       line-height: 1.25;
@@ -57,7 +60,7 @@
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-  /* line 64, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+  /* line 68, /projects/middleman/climatzon/source/stylesheets/slider.scss */
   .slider a.slidenav {
     cursor: pointer;
     transition: 0.3s;
@@ -69,14 +72,14 @@
     background-size: 1.375em auto;
     width: 3.875em;
     outline: 0; }
-    /* line 75, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+    /* line 79, /projects/middleman/climatzon/source/stylesheets/slider.scss */
     .slider a.slidenav:hover {
       opacity: 0.5; }
-    /* line 76, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+    /* line 80, /projects/middleman/climatzon/source/stylesheets/slider.scss */
     .slider a.slidenav.prev {
       background-image: url("/climatzon/images/slider-nav-prev.png");
       left: 0; }
-    /* line 80, /projects/middleman/climatzon/source/stylesheets/slider.scss */
+    /* line 84, /projects/middleman/climatzon/source/stylesheets/slider.scss */
     .slider a.slidenav.next {
       background-image: url("/climatzon/images/slider-nav-next.png");
       right: 0; }
