@@ -32,6 +32,7 @@
           @include font(em(18px), default, bold, $text-color);
           display: block;
           text-align: center;
+          text-decoration: none;
           outline: 0;
 
           .image {
