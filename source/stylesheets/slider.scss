@@ -12,31 +12,35 @@
     background-position: right 0;
   }
 
-  ul.slidenav {
-    list-style: none;
-    margin: em(80px) auto em(50px);
-    padding: 0;
+  .slidernav {
+    background: $bg-color;
 
-    li {
-      display: block;
+    ul {
+      list-style: none;
+      margin: em(80px) auto em(50px);
+      padding: 0;
 
-      &.uk-active a .image {
-        border-color: $blue-color;
-        background: $blue-color;
-      }
-
-      a {
-        @include font(em(18px), default, bold, $text-color);
+      li {
         display: block;
-        text-align: center;
-        outline: 0;
 
-        .image {
-          @include size(em(114px, 18px));
-          background: $green-color;
-          margin: 0 auto font-top(59px, 18px);
-          border-radius: 50%;
-          border: 3px solid $green-color;
+        &.uk-active a .image {
+          border-color: $blue-color;
+          background: $blue-color;
+        }
+
+        a {
+          @include font(em(18px), default, bold, $text-color);
+          display: block;
+          text-align: center;
+          outline: 0;
+
+          .image {
+            @include size(em(114px, 18px));
+            background: $green-color;
+            margin: 0 auto font-top(59px, 18px);
+            border-radius: 50%;
+            border: 3px solid $green-color;
+          }
         }
       }
     }

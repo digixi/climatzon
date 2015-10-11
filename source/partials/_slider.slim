@@ -1,7 +1,7 @@
 /! PARTIAL slider
 .slider-wrapper-01
-  .slider-wrapper-02
-    .uk-container.uk-container-center.uk-padding-remove data-uk-slideshow="{autoplay: true, animation: 'scroll'}"
+  .slider-wrapper-02 data-uk-slideshow="{autoplay: true, animation: 'scroll'}"
+    .uk-container.uk-container-center.uk-padding-remove
       .slider
         ul.uk-slideshow
           li
@@ -19,17 +19,19 @@
               h2 Запчасти<br/>Mitsubishi<br/>Electric
         a.slidenav.prev href="" data-uk-slideshow-item="previous"
         a.slidenav.next href="" data-uk-slideshow-item="next"
-      ul.slidenav.uk-flex.uk-flex-space-around
-        li data-uk-slideshow-item="0": a href=""
-          .image: img src=image_path('slider-nav-01.png') alt="слайд 1"
-          .text Обслуживание
-        li data-uk-slideshow-item="1": a href=""
-          .image: img src=image_path('slider-nav-02.png') alt="слайд 2"
-          .text Диагностика и ремонт
-        li data-uk-slideshow-item="2": a href=""
-          .image: img src=image_path('slider-nav-03.png') alt="слайд 3"
-          .text Проектирование
-        li data-uk-slideshow-item="3": a href=""
-          .image: img src=image_path('slider-nav-04.png') alt="слайд 4"
-          .text Запчасти Mitsubishi Electric
+    .slidernav
+      .uk-container.uk-container-center.uk-padding-remove
+        ul.slidenav.uk-flex.uk-flex-space-around
+          li data-uk-slideshow-item="0": a href=""
+            .image: img src=image_path('slider-nav-01.png') alt="слайд 1"
+            .text Обслуживание
+          li data-uk-slideshow-item="1": a href=""
+            .image: img src=image_path('slider-nav-02.png') alt="слайд 2"
+            .text Диагностика и ремонт
+          li data-uk-slideshow-item="2": a href=""
+            .image: img src=image_path('slider-nav-03.png') alt="слайд 3"
+            .text Проектирование
+          li data-uk-slideshow-item="3": a href=""
+            .image: img src=image_path('slider-nav-04.png') alt="слайд 4"
+            .text Запчасти Mitsubishi Electric
 /! EOF PARTIAL slider
