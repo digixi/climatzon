@@ -1,0 +1,20 @@
+{
+  "name": "climatzon",
+  "version": "0.0.1",
+  "authors": [
+    "Alexey Ovchinnikov <alexey.ovchinnikov@yandex.ru>"
+  ],
+  "description": "Climatzon Site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "~2.22.0"
+  }
+}

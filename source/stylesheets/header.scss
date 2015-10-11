@@ -1,0 +1,77 @@
+@import "vars";
+
+header {
+  img.logo {
+    @include position(relative, em(-6px), em(8px));
+    float: left;
+  }
+
+  .header { margin-left: em(217px); }
+
+  .slogan {
+    @include clear-after;
+
+    h2 {
+      @include font(em(30px), 1, 900, $green-color, $style: italic);
+      margin-top: font-top(20px, 30px, 1, bi);
+      &::first-line { color: $blue-color; }
+    }
+
+    p { color: $grey-color; }
+  }
+
+  .contacts {
+    float: right;
+    padding-top: em(22px);
+
+    .right-block, .left-block { float: right; }
+
+    .left-block {
+      padding-right: em(28px);
+      text-align: right;
+
+      .phone {
+        @include font(em(24px), 1, 900, $blue-color);
+        white-space: nowrap;
+        .code {
+          color: $green-color;
+          font-weight: 400;
+        }
+      }
+
+      .mail {
+        color: $green-color;
+        text-decoration: none;
+        margin-top: em(3px);
+        display: inline-block;
+      }
+
+      .mitsubishi {
+        margin-top: em(32px);
+      }
+    }
+
+    .right-block {
+      .btn { @include font($weight: 500, $style: italic); }
+      p {
+        @include font($color: $grey-color, $style: italic);
+        margin: em(32px) 0 0;
+        padding: font-top(8px, 16px) 0 0 em(28px);
+        border-left: 1px solid $light-grey-color;
+      }
+    }
+  }
+
+  nav {
+    margin: em(54px) 0 font-bottom(26px, 18px, 1);
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        @include font(em(18px), 1, bold);
+        white-space: nowrap;
+      }
+    }
+  }
+}

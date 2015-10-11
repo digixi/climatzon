@@ -1,0 +1,24 @@
+@import "vars";
+
+footer {
+  p {
+    color: $grey-color;
+    font-size: em(14px);
+    margin: 0;
+  }
+  background-image: image-url('footer-bg.png');
+  background-repeat: repeat;
+  padding: em(35px) 0 em(15px);
+
+  .logo { margin-top: em(15px); }
+
+  .contacts p {
+    text-align: right;
+    a { color: $grey-color; }
+  }
+
+  p.phone {
+    @include font(em(24px), default, 900);
+    .code { font-weight: normal; }
+  }
+}

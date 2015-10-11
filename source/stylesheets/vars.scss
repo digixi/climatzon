@@ -1,0 +1,135 @@
+@import "uikit/scss/uikit-variables";
+
+$bg-color:         #f3f3f3;
+$text-color:       #3a3a3a;
+$blue-color:       #587fad;
+$green-color:      #71a077;
+$grey-color:       #808080;
+$light-grey-color: #cccccc;
+$white-color:      #fff;
+
+$font-family: lato, "Trebuchet MS", Helvetica, sans-serif;
+$base-font-size: 16px;
+$base-line-height: (18 / 16);
+
+$fonts: (
+  base: (family: $font-family, ascender: 0.805, descender: 0.195, capline: 0.716, meanline: 0.506),
+  bi:   (family: $font-family, ascender: 0.805, descender: 0.195, capline: 0.729, meanline: 0.519)
+);
+
+@mixin small {
+  @media (min-width: $breakpoint-small) { @content; }
+}
+
+@mixin medium {
+  @media (min-width: $breakpoint-medium) { @content; }
+}
+
+@mixin large {
+  @media (min-width: $breakpoint-large) { @content; }
+}
+
+@mixin xlarge {
+  @media (min-width: $breakpoint-xlarge) { @content; }
+}
+
+@mixin text {
+  p, h1, h2, h3, h4, h5, h6, li, td, th, dt, dd, a { @content; }
+}
+
+@function em($size, $base: $base-font-size) {
+  @if (unitless($size)) { $size: $size * 1px; }
+  @if (unitless($base)) { $base: $base * 1px; }
+  @return $size / $base * 1em;
+}
+
+@function get-font-family($family) {
+  @return if(map-has-key($fonts, $family),
+             map-get(map-get($fonts, $family), family),
+             $family);
+}
+
+@mixin font($size: default, $line-height: default, $weight: default,
+            $color: default, $align: default, $family: default,
+            $style: default) {
+  @if ($size != default) {
+    @if (unitless($size)) { $size: $size * 1px; }
+    font-size: $size;
+  }
+  @if ($line-height != default) { line-height: $line-height; }
+  @if ($weight      != default) { font-weight: $weight; }
+  @if ($color       != default) { color: $color; }
+  @if ($align       != default) { text-align: $align; }
+  @if ($family      != default) { font-family: get-font-family($family); }
+  @if ($style       != default) { font-style: $style; }
+}
+
+@function font-top($space: 0px, $size: $base-font-size, $line-height: $base-line-height,
+                   $family: base, $em: true, $line: capline) {
+  @if (unitless($space)) { $space: $space * 1px; }
+  @if (unitless($size)) { $size: $size * 1px; }
+  @if ($family == default) { $family: base; }
+  @if (not map-has-key($fonts, $family)) { @return $space; }
+  $font: map-get($fonts, $family);
+  @if (not map-has-key($font, $line)) { @return $space; }
+  @if (unitless($line-height)) { $line-height: $size * $line-height; }
+  $top: $space - $size * (map-get($font, ascender) - map-get($font, $line)) -
+        ($line-height - $size) / 2;
+  @return if($em, em($top, $size), $top);
+}
+
+@function font-bottom($space: 0px, $size: $base-font-size, $line-height: $base-line-height,
+                      $family: base, $em: true) {
+  @if (unitless($space)) { $space: $space * 1px; }
+  @if (unitless($size)) { $size: $size * 1px; }
+  @if ($family == default) { $family: base; }
+  @if (not map-has-key($fonts, $family)) { @return $space; }
+  $font: map-get($fonts, $family);
+  @if (unitless($line-height)) { $line-height: $size * $line-height; }
+  $bottom: $space - $size * map-get($font, descender) - ($line-height - $size) / 2;
+  @return if($em, em($bottom, $size), $bottom);
+}
+
+@function font-between($space: 0px,
+                       $size-above: $base-font-size, $line-height-above: $base-line-height, $family-above: base,
+                       $size-below: $base-font-size, $line-height-below: $base-line-height, $family-below: base,
+                       $em: above, $line: capline) {
+  @if (unitless($space)) { $space: $space * 1px; }
+  $above: font-bottom(0px, $size-above, $line-height-above, $family-above, false);
+  $below: font-top(0px, $size-below, $line-height-below, $family-below, false, $line);
+  $between: $space + $above + $below;
+  @return if($em, em($between, if($em == above, $size-above, $size-below)), $between);
+}
+
+@mixin position($position,
+                $left: default, $top: default,
+                $width: default, $height: default,
+                $right: default, $bottom: default,
+                $z-index: default) {
+  position: $position;
+  @if $left    != default { left:    $left; }
+  @if $top     != default { top:     $top; }
+  @if $right   != default { right:   $right; }
+  @if $bottom  != default { bottom:  $bottom; }
+  @if $width   != default { width:   $width; }
+  @if $height  != default { height:  $height; }
+  @if $z-index != default { z-index: $z-index; }
+}
+
+@mixin size($width: default, $height: default) {
+  // makes square size if only one dimmention specified
+  $height: if($height == default and $width != default, $width,  $height);
+  @if $width  != default { width:  $width; }
+  @if $height != default { height: $height; }
+}
+
+@mixin clear-after {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}

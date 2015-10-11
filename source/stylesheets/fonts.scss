@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-regular.eot');
+    src: font-url('lato-regular.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-regular.woff') format('woff'),
+         font-url('lato-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-italic.eot');
+    src: font-url('lato-italic.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-italic.woff') format('woff'),
+         font-url('lato-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-semibolditalic.eot');
+    src: font-url('lato-semibolditalic.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-semibolditalic.woff') format('woff'),
+         font-url('lato-semibolditalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-bold.eot');
+    src: font-url('lato-bold.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-bold.woff') format('woff'),
+         font-url('lato-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-black.eot');
+    src: font-url('lato-black.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-black.woff') format('woff'),
+         font-url('lato-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: font-url('lato-blackitalic.eot');
+    src: font-url('lato-blackitalic.eot?#iefix') format('embedded-opentype'),
+         font-url('lato-blackitalic.woff') format('woff'),
+         font-url('lato-blackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

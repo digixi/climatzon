@@ -1,0 +1,37 @@
+@import "vars";
+
+.index {
+  .date { @include font(em(14px)); opacity: 0.7 }
+  p { font-size: em(14px); }
+
+  .right-column {
+    article {
+      padding: em(25px) em(28px);
+      border: 2px solid $light-grey-color;
+
+      .date { font-weight: bold; }
+
+      h2 {
+        @include font(em(24px), default, bold, $green-color);
+        margin-top: font-top(16px, 24px);
+      }
+    }
+  }
+
+  .news {
+    background-image: image-url('news-bg.png');
+    background-repeat: repeat;
+    background-position: center center;
+    h2 a.alone { font-size: em(14px, 36px); margin-left: em(25px, 14px); }
+    h3 {
+      @include font(em(18px), 20/18, bold, $green-color);
+      margin-top: font-top(12px, 18px);
+      margin-bottom: font-bottom(20px, 18px);
+    }
+
+    .list {
+      margin: em(65px) 0 em(80px);
+      .uk-grid:last-child { margin-top: 0; }
+    }
+  }
+}

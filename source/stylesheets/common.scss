@@ -1,0 +1,42 @@
+@import "vars";
+
+body {
+  background: $bg-color;
+  color: $text-color;
+
+  font-size: 12px;
+  @include large { font-size: 14px; };
+  @include xlarge { font-size: 16px; };
+  line-height: $base-line-height;
+
+  padding: em(20px);
+}
+
+@include text {
+  font-family: $font-family;
+  line-height: $base-line-height;
+};
+
+a {
+  color: $green-color;
+  text-decoration: underline;
+  &:hover { text-decoration: none; }
+  &.alone { font-size: em(14px); }
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  height: em(40px);
+  line-height: em(40px);
+  padding: 0 em(30px);
+
+  &.btn-green {
+    background: $green-color;
+    border-color: $green-color;
+    color: $white-color;
+  }
+}
