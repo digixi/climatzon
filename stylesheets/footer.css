@@ -1,0 +1,26 @@
+/* line 3, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+footer {
+  background-image: url("/climatzon/images/footer-bg.png");
+  background-repeat: repeat;
+  padding: 2.1875em 0 0.9375em; }
+  /* line 4, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+  footer p {
+    color: #808080;
+    font-size: 0.875em;
+    margin: 0; }
+  /* line 13, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+  footer .logo {
+    margin-top: 0.9375em; }
+  /* line 15, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+  footer .contacts p {
+    text-align: right; }
+    /* line 17, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+    footer .contacts p a {
+      color: #808080; }
+  /* line 20, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+  footer p.phone {
+    font-size: 1.5em;
+    font-weight: 900; }
+    /* line 22, /projects/middleman/climatzon/source/stylesheets/footer.scss */
+    footer p.phone .code {
+      font-weight: normal; }

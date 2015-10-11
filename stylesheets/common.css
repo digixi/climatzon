@@ -1,0 +1,47 @@
+/* line 3, /projects/middleman/climatzon/source/stylesheets/common.scss */
+body {
+  background: #f3f3f3;
+  color: #3a3a3a;
+  font-size: 12px;
+  line-height: 1.125;
+  padding: 1.25em; }
+  @media (min-width: 960px) {
+    /* line 3, /projects/middleman/climatzon/source/stylesheets/common.scss */
+    body {
+      font-size: 14px; } }
+  @media (min-width: 1220px) {
+    /* line 3, /projects/middleman/climatzon/source/stylesheets/common.scss */
+    body {
+      font-size: 16px; } }
+
+/* line 37, /projects/middleman/climatzon/source/stylesheets/vars.scss */
+p, h1, h2, h3, h4, h5, h6, li, td, th, dt, dd, a {
+  font-family: lato, "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 1.125; }
+
+/* line 20, /projects/middleman/climatzon/source/stylesheets/common.scss */
+a {
+  color: #71a077;
+  text-decoration: underline; }
+  /* line 23, /projects/middleman/climatzon/source/stylesheets/common.scss */
+  a:hover {
+    text-decoration: none; }
+  /* line 24, /projects/middleman/climatzon/source/stylesheets/common.scss */
+  a.alone {
+    font-size: 0.875em; }
+
+/* line 27, /projects/middleman/climatzon/source/stylesheets/common.scss */
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 1.875em; }
+  /* line 37, /projects/middleman/climatzon/source/stylesheets/common.scss */
+  .btn.btn-green {
+    background: #71a077;
+    border-color: #71a077;
+    color: #fff; }

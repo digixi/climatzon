@@ -1,0 +1,23 @@
+/* line 4, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.content h2 {
+  font-size: 2.25em;
+  margin-top: 0.40406em; }
+/* line 9, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.content summary {
+  font-weight: bold; }
+/* line 11, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.content .section {
+  display: table;
+  position: relative; }
+  /* line 14, /projects/middleman/climatzon/source/stylesheets/content.scss */
+  .content .section:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.75em;
+    height: 0.25em;
+    background: #71a077;
+    content: ''; }
+/* line 21, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.content.section-container {
+  margin-top: 4.375em; }

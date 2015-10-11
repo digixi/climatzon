@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-regular.eot");
+  src: url("/climatzon/fonts/lato-regular.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-regular.woff") format("woff"), url("/climatzon/fonts/lato-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-italic.eot");
+  src: url("/climatzon/fonts/lato-italic.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-italic.woff") format("woff"), url("/climatzon/fonts/lato-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-semibolditalic.eot");
+  src: url("/climatzon/fonts/lato-semibolditalic.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-semibolditalic.woff") format("woff"), url("/climatzon/fonts/lato-semibolditalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-bold.eot");
+  src: url("/climatzon/fonts/lato-bold.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-bold.woff") format("woff"), url("/climatzon/fonts/lato-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-black.eot");
+  src: url("/climatzon/fonts/lato-black.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-black.woff") format("woff"), url("/climatzon/fonts/lato-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("/climatzon/fonts/lato-blackitalic.eot");
+  src: url("/climatzon/fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-blackitalic.woff") format("woff"), url("/climatzon/fonts/lato-blackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
