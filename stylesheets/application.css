@@ -178,6 +178,26 @@ html{font:400 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-text
   src: url("/climatzon/fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("/climatzon/fonts/lato-blackitalic.woff") format("woff"), url("/climatzon/fonts/lato-blackitalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic; }
+/* line 4, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+.articles h1 {
+  margin-bottom: 1.87803em; }
+/* line 8, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+.articles h3 {
+  margin: 0.31489em 0 0.73578em; }
+  /* line 10, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+  .articles h3 a {
+    text-decoration: none; }
+/* line 13, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+.articles p {
+  font-size: 0.875em;
+  margin: 1.01957em 0; }
+
+/* line 20, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+.article .content h1 {
+  margin-bottom: 0.23914em; }
+/* line 24, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+.article .content .date {
+  margin-bottom: 2.28364em; }
 /* line 3, /projects/middleman/climatzon/source/stylesheets/common.scss */
 body {
   background: #f3f3f3;
@@ -298,13 +318,6 @@ p, summary {
 /* line 25, /projects/middleman/climatzon/source/stylesheets/content.scss */
 .with-image .content.section-container {
   margin-top: 2.4375em; }
-
-/* line 30, /projects/middleman/climatzon/source/stylesheets/content.scss */
-.article .content h1 {
-  margin-bottom: 0.23914em; }
-/* line 34, /projects/middleman/climatzon/source/stylesheets/content.scss */
-.article .content .date {
-  margin-bottom: 2.28364em; }
 /* line 3, /projects/middleman/climatzon/source/stylesheets/footer.scss */
 footer {
   background-image: url("/climatzon/images/footer-bg.png");
@@ -516,19 +529,6 @@ header nav {
         height: 0;
         border-style: solid;
         content: ''; }
-/* line 4, /projects/middleman/climatzon/source/stylesheets/news.scss */
-.news h1 {
-  margin-bottom: 1.87803em; }
-/* line 8, /projects/middleman/climatzon/source/stylesheets/news.scss */
-.news h3 {
-  margin: 0.31489em 0 0.73578em; }
-  /* line 10, /projects/middleman/climatzon/source/stylesheets/news.scss */
-  .news h3 a {
-    text-decoration: none; }
-/* line 13, /projects/middleman/climatzon/source/stylesheets/news.scss */
-.news p {
-  font-size: 0.875em;
-  margin: 1.01957em 0; }
 /* line 3, /projects/middleman/climatzon/source/stylesheets/slider.scss */
 .slider-wrapper-01 {
   margin-top: -2px;
