@@ -29,13 +29,22 @@ a {
 }
 
 .back {
-  margin: font-between(90px, 16px, default, base, 16px, default, base) 0 font-bottom(77px, 16px);
+  margin: font-between(90px, 16px, default, base, 16px, default, base) 0 font-bottom(77px, 16px) !important;
+}
+
+.date {
+  @include font(em(14px));
+  opacity: 0.7;
 }
 
 h1 {
   @include font(em(36px), default, normal);
   margin: 0 0 font-between(45px, 36px, default, base, 16px, default, base);
   padding: font-top(20px, 36px) 0 0;
+}
+
+h3 {
+  @include font(em(18px), default, bold);
 }
 
 p, summary {

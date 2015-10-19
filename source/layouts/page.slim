@@ -3,5 +3,15 @@
     .uk-container.uk-container-center.uk-padding-remove
       .page-image style="background-image: url(#{image_path(current_page.data['image'])})"
   .uk-container.uk-container-center.uk-padding-remove.content.section-container
+    - parent = current_page.parent
+    - if parent.parent.nil?
+      h1 = current_page.data['title']
+      = partial 'partials/local_menu'
+      p.back = link_to 'Вернуться назад', parent
+    - else
+      = partial 'partials/local_menu'
+      h1 = current_page.data['title']
+    - if current_article
+      p.date = date current_article.date
     = yield
-    p.back = link_to 'Вернуться назад', current_page.parent
+    p.back = link_to 'Вернуться назад', parent

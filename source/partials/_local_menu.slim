@@ -1,10 +1,16 @@
 /! PARTIAL local_menu
-- parent = current_page.directory_index? ? current_page : current_page.parent
+- parent = current_page
+- while !parent.parent.parent.nil? do parent = parent.parent; end
 ul.local-menu
-  - parent.children.each do |page|
-    li
+  - parent.children.sort_by {|x| x.data['order']}.each do |page|
+    - current = current_page
+    - active = current == page
+    - while !active && !current.parent.nil? do
+      - active = current == page
+      - current = current.parent
+    li class=(active ? 'active' : '')
       - if page == current_page
-        = page.data.caption || page.data.title
+        = link_to page.data.caption || page.data.title, ''
       - else
         = link_to page.data.caption || page.data.title, page
 /! EOF PARTIAL local_menu

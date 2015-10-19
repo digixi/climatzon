@@ -78,3 +78,26 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+summary_generator = proc do |context, rendered, *args|
+  html = html_doc = Nokogiri::HTML('<article>' + rendered + '</article>')
+  nodes = html.css('article > *')
+  hr = html.at_css('article > hr')
+  hr ? nodes.slice(0, nodes.index(hr)).to_html : nodes.first.to_html
+end
+
+helpers do
+  MONTHS = %w(января февраля марта апреля мая июня июля августа сентября октября ноября декабря)
+
+  def date(d)
+    "#{d.day} #{MONTHS[d.month.to_i - 1]} #{d.year}"
+  end
+end
+
+activate :blog do |blog|
+  blog.name = 'news'
+  blog.prefix = 'about/news'
+  blog.layout = 'page'
+  blog.permalink = '{year}-{month}-{day}-{title}.html'
+  blog.summary_generator = summary_generator
+end

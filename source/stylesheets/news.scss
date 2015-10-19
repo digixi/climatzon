@@ -1,0 +1,17 @@
+@import "vars";
+
+.news {
+  h1 {
+    margin-bottom: font-between(79px, 36px, default, base, 14px, default, base);
+  }
+
+  h3 {
+    margin: font-between(12px, 14px, default, base, 18px, default, base, $em: below) 0 font-between(20px, 18px, default, base, 14px, default, base);
+    a { text-decoration: none; }
+  }
+
+  p {
+    @include font(em(14px));
+    margin: font-between(20px, 14px, default, base, 14px, default, base) 0;
+  }
+}
