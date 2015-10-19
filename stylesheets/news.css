@@ -1,0 +1,13 @@
+/* line 4, /projects/middleman/climatzon/source/stylesheets/news.scss */
+.news h1 {
+  margin-bottom: 1.87803em; }
+/* line 8, /projects/middleman/climatzon/source/stylesheets/news.scss */
+.news h3 {
+  margin: 0.31489em 0 0.73578em; }
+  /* line 10, /projects/middleman/climatzon/source/stylesheets/news.scss */
+  .news h3 a {
+    text-decoration: none; }
+/* line 13, /projects/middleman/climatzon/source/stylesheets/news.scss */
+.news p {
+  font-size: 0.875em;
+  margin: 1.01957em 0; }

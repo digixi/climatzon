@@ -34,23 +34,33 @@ a {
 
 /* line 31, /projects/middleman/climatzon/source/stylesheets/common.scss */
 .back {
-  margin: 5.216em 0 4.555em; }
+  margin: 5.216em 0 4.555em !important; }
 
 /* line 35, /projects/middleman/climatzon/source/stylesheets/common.scss */
+.date {
+  font-size: 0.875em;
+  opacity: 0.7; }
+
+/* line 40, /projects/middleman/climatzon/source/stylesheets/common.scss */
 h1 {
   font-size: 2.25em;
   font-weight: normal;
   margin: 0 0 0.92517em;
   padding: 0.40406em 0 0; }
 
-/* line 41, /projects/middleman/climatzon/source/stylesheets/common.scss */
+/* line 46, /projects/middleman/climatzon/source/stylesheets/common.scss */
+h3 {
+  font-size: 1.125em;
+  font-weight: bold; }
+
+/* line 50, /projects/middleman/climatzon/source/stylesheets/common.scss */
 p, summary {
   margin: 1.341em 0; }
 
-/* line 46, /projects/middleman/climatzon/source/stylesheets/common.scss */
+/* line 55, /projects/middleman/climatzon/source/stylesheets/common.scss */
 .with-image h1 {
   position: relative; }
-  /* line 48, /projects/middleman/climatzon/source/stylesheets/common.scss */
+  /* line 57, /projects/middleman/climatzon/source/stylesheets/common.scss */
   .with-image h1:before {
     position: absolute;
     left: 0;
@@ -59,14 +69,14 @@ p, summary {
     height: 0.11111em;
     background: #71a077;
     content: ''; }
-/* line 55, /projects/middleman/climatzon/source/stylesheets/common.scss */
+/* line 64, /projects/middleman/climatzon/source/stylesheets/common.scss */
 .with-image .page-image {
   height: 8.125em;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 63, /projects/middleman/climatzon/source/stylesheets/common.scss */
+/* line 72, /projects/middleman/climatzon/source/stylesheets/common.scss */
 .btn {
   display: inline-block;
   white-space: nowrap;
@@ -76,7 +86,7 @@ p, summary {
   height: 2.5em;
   line-height: 2.5em;
   padding: 0 1.875em; }
-  /* line 73, /projects/middleman/climatzon/source/stylesheets/common.scss */
+  /* line 82, /projects/middleman/climatzon/source/stylesheets/common.scss */
   .btn.btn-green {
     background: #71a077;
     border-color: #71a077;

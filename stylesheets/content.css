@@ -18,7 +18,17 @@
 /* line 19, /projects/middleman/climatzon/source/stylesheets/content.scss */
 .content.section-container {
   margin-top: 4.375em; }
+  /* line 21, /projects/middleman/climatzon/source/stylesheets/content.scss */
+  .content.section-container .local-menu:first-child {
+    margin-top: -1.5625em; }
 
-/* line 24, /projects/middleman/climatzon/source/stylesheets/content.scss */
+/* line 25, /projects/middleman/climatzon/source/stylesheets/content.scss */
 .with-image .content.section-container {
   margin-top: 2.4375em; }
+
+/* line 30, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.article .content h1 {
+  margin-bottom: 0.23914em; }
+/* line 34, /projects/middleman/climatzon/source/stylesheets/content.scss */
+.article .content .date {
+  margin-bottom: 2.28364em; }

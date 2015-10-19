@@ -38,3 +38,22 @@ header nav {
     /* line 37, /projects/middleman/climatzon/source/stylesheets/menu.scss */
     .content ul.local-menu li:first-child {
       margin-left: 0; }
+    /* line 38, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+    .content ul.local-menu li.active {
+      position: relative; }
+      /* line 39, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      .content ul.local-menu li.active a {
+        color: #3a3a3a;
+        text-decoration: none; }
+      /* line 41, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      .content ul.local-menu li.active:after {
+        position: absolute;
+        bottom: -10px;
+        border-width: 6px 7px 0 7px;
+        border-color: #3a3a3a transparent transparent transparent;
+        left: 50%;
+        margin-left: -7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        content: ''; }
