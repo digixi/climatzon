@@ -7,7 +7,9 @@ html
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
 
-  body class=page_classes
+  - classes = page_classes.split(/\s+/)
+  - classes << 'with-image' if current_page.data.key?('image')
+  body class=classes.join(' ')
     = partial 'partials/header'
     = yield
     = partial 'partials/footer'

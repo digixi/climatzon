@@ -95,6 +95,8 @@ $fonts: (
                        $size-below: $base-font-size, $line-height-below: $base-line-height, $family-below: base,
                        $em: above, $line: capline) {
   @if (unitless($space)) { $space: $space * 1px; }
+  @if ($line-height-above == default) { $line-height-above: $base-line-height; }
+  @if ($line-height-below == default) { $line-height-below: $base-line-height; }
   $above: font-bottom(0px, $size-above, $line-height-above, $family-above, false);
   $below: font-top(0px, $size-below, $line-height-below, $family-below, false, $line);
   $between: $space + $above + $below;

@@ -18,10 +18,46 @@ body {
 };
 
 a {
+  transition: 0.3s;
   color: $green-color;
   text-decoration: underline;
-  &:hover { text-decoration: none; }
+  &:hover {
+    text-decoration: underline;
+    color: $blue-color;
+  }
   &.alone { font-size: em(14px); }
+}
+
+.back {
+  margin: font-between(90px, 16px, default, base, 16px, default, base) 0 font-bottom(77px, 16px);
+}
+
+h1 {
+  @include font(em(36px), default, normal);
+  margin: 0 0 font-between(45px, 36px, default, base, 16px, default, base);
+  padding: font-top(20px, 36px) 0 0;
+}
+
+p, summary {
+  margin: font-between(28px, 16px, default, base, 16px, default, base) 0;
+}
+
+.with-image {
+  h1 {
+    position: relative;
+    &:before {
+      @include position(absolute, 0, 0, em(60px, 36px), em(4px, 36px));
+      background: $green-color;
+      content: '';
+    }
+  }
+
+  .page-image {
+    height: em(130px);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .btn {

@@ -1,7 +1,15 @@
 @import "vars";
 
 .index {
+  h2 {
+    @include font(em(36px));
+    margin-top: font-top(20px, 36px);
+  }
+
+  summary { padding-left: 0; }
+
   .date { @include font(em(14px)); opacity: 0.7 }
+
   p { font-size: em(14px); }
 
   .right-column {

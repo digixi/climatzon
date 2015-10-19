@@ -1,0 +1,10 @@
+/! PARTIAL local_menu
+- parent = current_page.directory_index? ? current_page : current_page.parent
+ul.local-menu
+  - parent.children.each do |page|
+    li
+      - if page == current_page
+        = page.data.caption || page.data.title
+      - else
+        = link_to page.data.caption || page.data.title, page
+/! EOF PARTIAL local_menu

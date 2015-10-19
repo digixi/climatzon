@@ -1,6 +1,8 @@
 @import "vars";
 
 header {
+  border-bottom: 2px solid $green-color;
+
   img.logo {
     @include position(relative, em(-6px), em(8px));
     float: left;
@@ -58,19 +60,6 @@ header {
         margin: em(32px) 0 0;
         padding: font-top(8px, 16px) 0 0 em(28px);
         border-left: 1px solid $light-grey-color;
-      }
-    }
-  }
-
-  nav {
-    margin: em(54px) 0 font-bottom(26px, 18px, 1);
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      li {
-        @include font(em(18px), 1, bold);
-        white-space: nowrap;
       }
     }
   }

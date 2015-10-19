@@ -1,12 +1,10 @@
 @import "vars";
 
 .content {
-  h2 {
-    @include font(em(36px));
-    margin-top: font-top(20px, 36px);
+  summary {
+    font-weight: bold;
+    padding-left: em(48px);
   }
-
-  summary { font-weight: bold; }
 
   .section {
     display: table;
@@ -21,4 +19,8 @@
   &.section-container {
     margin-top: em(70px);
   }
+}
+
+.with-image .content.section-container {
+  margin-top: em(39px);
 }

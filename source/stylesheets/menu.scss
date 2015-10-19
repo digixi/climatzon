@@ -1,0 +1,40 @@
+@import "vars";
+
+header {
+  nav {
+    margin: em(54px) 0 font-bottom(26px, 18px, 1);
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        @include font(em(18px), 1, bold);
+        white-space: nowrap;
+        a {
+          transition: 0.3s;
+          text-decoration: none;
+          color: $text-color;
+        }
+        &.active a, &:hover a {
+          color: $green-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  ul.local-menu {
+    padding: 0;
+    margin: em(45px) 0;
+    list-style: none;
+    li {
+      margin-left: em(30px);
+      display: inline-block;
+      @include font(em(18px), 1, bold);
+      white-space: nowrap;
+      &:first-child { margin-left: 0; }
+    }
+  }
+}

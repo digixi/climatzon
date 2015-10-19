@@ -1,0 +1,13 @@
+/! PARTIAL top_menu
+ul.uk-flex.uk-flex-space-between
+  - data.menu['top'].each do |item|
+    - page = sitemap.find_resource_by_path(item)
+    - next if page.nil?
+    - current = current_page
+    - active = current == page
+    - while !active && !current.parent.nil? do
+      - active = current == page
+      - current = current.parent
+    li class="#{active ? 'active' : ''}"
+      = link_to page.data.caption || page.data.title, page
+/! EOF PARTIAL top_menu
