@@ -2,20 +2,6 @@
 title:  Новости компании
 layout: page
 order:  1
-class:  news
+class:  articles
 ---
-
-.uk-grid.news data-uk-grid-margin=""
-  - blog('news').articles[0...9].each do |article|
-    .uk-width-1-2.uk-width-medium-1-3.article
-      - if article.data[:image]
-        .image style="background-image: url(#{image_path(article.data[:image])})"
-      .date = date article.date.to_date
-      h3: a href=article.url == article.title
-      .text == article.summary
-- if blog('news').articles.size > 9
-  .uk-grid
-    .uk-width-1-3
-    .uk-width-1-3
-      .btn.btn-o.btn-block Показать ещё
-    .uk-width-1-3    
+= partial 'partials/articles', locals: {name: 'news'}

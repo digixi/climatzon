@@ -1,6 +1,6 @@
 @import "vars";
 
-.news {
+.articles {
   h1 {
     margin-bottom: font-between(79px, 36px, default, base, 14px, default, base);
   }
@@ -13,5 +13,15 @@
   p {
     @include font(em(14px));
     margin: font-between(20px, 14px, default, base, 14px, default, base) 0;
+  }
+}
+
+.article .content {
+  h1 {
+    margin-bottom: font-between(20px, 36px, default, base, 14px, default, base);
+  }
+
+  .date {
+    margin-bottom: font-between(38px, 14px, default, base, 16px, default, base);
   }
 }
