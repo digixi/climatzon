@@ -4,4 +4,7 @@ layout: page
 order:  3
 ---
 
-h1 Наши клиенты
+.uk-grid.news data-uk-grid-margin=""
+  - data.clients.each do |client|
+    .uk-width-1-6
+      img src=image_path('clients/' + client['image'])

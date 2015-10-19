@@ -5,14 +5,24 @@
     margin-bottom: font-between(79px, 36px, default, base, 14px, default, base);
   }
 
-  h3 {
-    margin: font-between(12px, 14px, default, base, 18px, default, base, $em: below) 0 font-between(20px, 18px, default, base, 14px, default, base);
-    a { text-decoration: none; }
-  }
+  .article {
+    h3 {
+      margin: font-between(12px, 14px, default, base, 18px, default, base, $em: below) 0 font-between(20px, 18px, default, base, 14px, default, base);
+      a { text-decoration: none; }
+    }
 
-  p {
-    @include font(em(14px));
-    margin: font-between(20px, 14px, default, base, 14px, default, base) 0;
+    p {
+      @include font(em(14px));
+      margin: font-between(20px, 14px, default, base, 14px, default, base) 0;
+    }
+
+    .image {
+      height: em(100px);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: font-top(19px, 18px, $em: 16px);
+    }
   }
 }
 

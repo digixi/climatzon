@@ -75,7 +75,7 @@ $fonts: (
   @if (unitless($line-height)) { $line-height: $size * $line-height; }
   $top: $space - $size * (map-get($font, ascender) - map-get($font, $line)) -
         ($line-height - $size) / 2;
-  @return if($em, em($top, $size), $top);
+  @return if($em, em($top, if($em == true, $size, $em)), $top);
 }
 
 @function font-bottom($space: 0px, $size: $base-font-size, $line-height: $base-line-height,
@@ -87,7 +87,7 @@ $fonts: (
   $font: map-get($fonts, $family);
   @if (unitless($line-height)) { $line-height: $size * $line-height; }
   $bottom: $space - $size * map-get($font, descender) - ($line-height - $size) / 2;
-  @return if($em, em($bottom, $size), $bottom);
+  @return if($em, em($bottom, if($em == true, $size, $em)), $bottom);
 }
 
 @function font-between($space: 0px,
@@ -100,7 +100,7 @@ $fonts: (
   $above: font-bottom(0px, $size-above, $line-height-above, $family-above, false);
   $below: font-top(0px, $size-below, $line-height-below, $family-below, false, $line);
   $between: $space + $above + $below;
-  @return if($em, em($between, if($em == above, $size-above, $size-below)), $between);
+  @return if($em, em($between, if($em == above, $size-above, if($em == below, $size-below, $em))), $between);
 }
 
 @mixin position($position,

@@ -7,7 +7,6 @@
     - if parent.parent.nil?
       h1 = current_page.data['title']
       = partial 'partials/local_menu'
-      p.back = link_to 'Вернуться назад', parent
     - else
       = partial 'partials/local_menu'
       h1 = current_page.data['title']

@@ -109,3 +109,11 @@ activate :blog do |blog|
   blog.permalink = '{year}-{month}-{day}-{title}.html'
   blog.summary_generator = summary_generator
 end
+
+activate :blog do |blog|
+  blog.name = 'articles'
+  blog.prefix = 'about/articles'
+  blog.layout = 'page'
+  blog.permalink = '{year}-{month}-{day}-{title}.html'
+  blog.summary_generator = summary_generator
+end
