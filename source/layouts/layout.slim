@@ -6,6 +6,7 @@ html
     title = current_page.data.title || "Climat Zon"
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
+    = yield_content :head
 
   - classes = (current_page.data['class'] || '').split(/\s+/)
   - classes << 'with-image' if current_page.data.key?('image')

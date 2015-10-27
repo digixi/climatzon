@@ -14,7 +14,10 @@ footer {
 
   .contacts p {
     text-align: right;
-    a { color: $grey-color; }
+    a {
+      color: $grey-color;
+      &:hover { color: $blue-color; }
+    }
   }
 
   p.phone {

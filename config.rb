@@ -104,7 +104,7 @@ end
 
 activate :blog do |blog|
   blog.name = 'jobs'
-  blog.prefix = 'about/jobs'
+  blog.prefix = 'jobs'
   blog.layout = 'page'
   blog.permalink = '{year}-{month}-{day}-{title}.html'
   blog.summary_generator = summary_generator
@@ -116,4 +116,12 @@ activate :blog do |blog|
   blog.layout = 'page'
   blog.permalink = '{year}-{month}-{day}-{title}.html'
   blog.summary_generator = summary_generator
+end
+
+activate :blog do |blog|
+  blog.name = 'services'
+  blog.prefix = 'services'
+  blog.layout = 'service'
+  blog.permalink = '{year}-{month}-{day}-{title}.html'
+  #blog.summary_generator = summary_generator
 end

@@ -1,0 +1,7 @@
+= wrap_layout 'layout' do
+  .uk-container.uk-container-center.uk-padding-remove
+    .page-image style="background-image: url(#{image_path(current_page.data['image'])})"
+  .uk-container.uk-container-center.uk-padding-remove.content.section-container
+    h1 = current_page.data['title']
+    = yield
+    p.back = link_to 'Вернуться назад', current_page.parent

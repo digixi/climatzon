@@ -35,3 +35,19 @@
     margin-bottom: font-between(38px, 14px, default, base, 16px, default, base);
   }
 }
+
+ul.articles {
+  list-style-type: none;
+  padding-left: em(38px);
+
+  & > li {
+    @include font(em(18px));
+    margin: font-between(27px, 18px, default, base, 18px, default, base) 0;
+    text-indent: em(-31px, 18px);
+    &:before {
+      content: '•';
+      color: #bbbbbb;
+      padding-right: em(22px, 18px);
+    }
+  }
+}

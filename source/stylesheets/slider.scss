@@ -12,41 +12,6 @@
     background-repeat: no-repeat;
     background-position: right 0;
   }
-
-  .slidernav {
-    background: $bg-color;
-
-    ul {
-      list-style: none;
-      margin: em(80px) auto em(50px);
-      padding: 0;
-
-      li {
-        display: block;
-
-        &.uk-active a .image {
-          border-color: $blue-color;
-          background: $blue-color;
-        }
-
-        a {
-          @include font(em(18px), default, bold, $text-color);
-          display: block;
-          text-align: center;
-          text-decoration: none;
-          outline: 0;
-
-          .image {
-            @include size(em(114px, 18px));
-            background: $green-color;
-            margin: 0 auto font-top(59px, 18px);
-            border-radius: 50%;
-            border: 3px solid $green-color;
-          }
-        }
-      }
-    }
-  }
 }
 
 .slider {

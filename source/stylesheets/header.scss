@@ -54,13 +54,17 @@ header {
     }
 
     .right-block {
-      .btn { @include font($weight: 500, $style: italic); }
+      //.btn { @include font($weight: 500, $style: italic); }
       p {
-        @include font($color: $grey-color, $style: italic);
         margin: em(32px) 0 0;
         padding: font-top(8px, 16px) 0 0 em(28px);
         border-left: 1px solid $light-grey-color;
       }
+      p, p a {
+        @include font($color: $grey-color, $style: italic);
+        text-decoration: none;
+      }
+      p a:hover { color: $blue-color; }
     }
   }
 }

@@ -1,5 +1,8 @@
 @import "vars";
 
+$fa-enable-utilities: false;
+@import "font-awesome";
+
 body {
   background: $bg-color;
   color: $text-color;
@@ -37,10 +40,14 @@ a {
   opacity: 0.7;
 }
 
-h1 {
+h1, .right-panel h2 {
   @include font(em(36px), default, normal);
   margin: 0 0 font-between(45px, 36px, default, base, 16px, default, base);
   padding: font-top(20px, 36px) 0 0;
+}
+
+h2 {
+  @include font(em(24px), default, bold);
 }
 
 h3 {
@@ -70,18 +77,36 @@ p, summary {
 }
 
 .btn {
+  @include font(em(16px), $weight: 500, $style: italic);
+  transition: 0.3s;
   display: inline-block;
   white-space: nowrap;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-style: solid;
-  height: em(40px);
+  &:not(button) { height: em(40px); }
   line-height: em(40px);
   padding: 0 em(30px);
+  cursor: pointer;
+
+  &.btn-rounded {
+    border-radius: 9999px;
+    border-width: 1px;
+    border-style: solid;
+  }
 
   &.btn-green {
     background: $green-color;
     border-color: $green-color;
     color: $white-color;
+    &:hover { background-color: #8db192; }
   }
+}
+
+.uk-form {
+  input[type="text"], textarea {
+    @include font(em(14px), $style: italic, $family: base);
+    background-color: $bg-color;
+  }
+}
+
+.right-panel {
+  width: em(480px);
 }

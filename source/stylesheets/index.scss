@@ -30,6 +30,7 @@
     background-image: image-url('news-bg.png');
     background-repeat: repeat;
     background-position: center center;
+    background-size: cover;
     h2 a.alone { font-size: em(14px, 36px); margin-left: em(25px, 14px); }
     h3 {
       @include font(em(18px), 20/18, bold, $green-color);

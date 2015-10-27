@@ -1,0 +1,4 @@
+ul.articles
+  - list = defined?(length) ? blog(name).articles[0...length] : blog(name).articles
+  - list.sort_by { |article| article.data[:order] }.each do |article|
+    li: a href=article.url == article.title

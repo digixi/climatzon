@@ -1,0 +1,34 @@
+@import "vars";
+
+.contacts {
+  .content {
+    .phone {
+      @include font(em(36px));
+      margin-bottom: em(30px, 36px);
+      .code { color: $green-color; }
+      .comment {
+        display: block;
+        @include font(em(18px, 36px));
+        margin-top: font-between(11px, 36px, default, base, 18px, default, base, $em: below, $line: meanline);
+        padding-left: em(95px, 18px);
+      }
+    }
+
+    p:not(.back) {
+      @include font(em(24px));
+      margin: font-between(34px, 24px, default, base, 24px, default, base) 0;
+      i {
+        font-size: 1.2em;
+        color: $green-color;
+        width: em(30px, 24px);
+        margin-right: em(10px, 24px);
+        text-align: center;
+      }
+    }
+  }
+
+  .map {
+    height: 400px;
+    margin-top: font-top(57px, 24px);
+  }
+}

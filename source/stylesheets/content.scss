@@ -20,6 +20,23 @@
     margin-top: em(70px);
     .local-menu:first-child { margin-top: em(-25px); }
   }
+
+  ul:not([class]) {
+    list-style-type: none;
+    padding-left: em(38px);
+
+    & > li {
+      margin: font-between(18px, 16px, default, base, 16px, default, base) 0;
+      text-indent: em(-31px);
+      &:before {
+        content: '•';
+        color: #bbbbbb;
+        padding-right: em(22px);
+      }
+    }
+  }
+
+
 }
 
 .with-image .content.section-container {

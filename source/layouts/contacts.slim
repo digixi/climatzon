@@ -1,0 +1,36 @@
+- content_for :head do
+  script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"
+
+= wrap_layout 'layout' do
+
+  - if current_page.data.key?('image')
+    .uk-container.uk-container-center.uk-padding-remove
+      .page-image style="background-image: url(#{image_path(current_page.data['image'])})"
+  .uk-container.uk-container-center.uk-padding-remove.content.section-container
+    .uk-float-right.right-panel
+      = partial 'partials/feedback'
+    h1 = current_page.data['title']
+    = yield
+  .map.uk-clearfix#map
+  .uk-container.uk-container-center.uk-padding-remove.content
+    p.back = link_to 'Вернуться назад', current_page.parent
+
+  / https://maps.yandex.ru/10765/shelkovo/?source=serp_navig&text=%D0%BA%D0%BB%D0%B8%D0%BC%D0%B0%D1%82%D0%B7%D0%BE%D0%BD&sll=37.819612%2C55.709825&sspn=0.010214%2C0.003471&ll=38.033270%2C55.911392&z=17&ol=biz&oid=1393852336
+  
+  javascript:
+    ymaps.ready(function() {
+      var map = new ymaps.Map('map', {
+        center: [55.912013, 38.031274],
+        zoom: 15,
+        controls: ['zoomControl']
+      });
+      map.behaviors.disable('scrollZoom');
+
+      var office = new ymaps.Placemark(
+        [55.911461, 38.032712],
+        {baloonContent: 'КлиматЗон', iconContent: 'КлиматЗон', hintContent: 'КлиматЗон'},
+        {preset: 'islands#redDotIcon'}
+      );
+
+      map.geoObjects.add(office);
+    });
