@@ -29,12 +29,13 @@
 .index .news {
   background-image: url("/climatzon/images/news-bg.png");
   background-repeat: repeat;
-  background-position: center center; }
-  /* line 33, /projects/middleman/climatzon/source/stylesheets/index.scss */
+  background-position: center center;
+  background-size: cover; }
+  /* line 34, /projects/middleman/climatzon/source/stylesheets/index.scss */
   .index .news h2 a.alone {
     font-size: 0.38889em;
     margin-left: 1.78571em; }
-  /* line 34, /projects/middleman/climatzon/source/stylesheets/index.scss */
+  /* line 35, /projects/middleman/climatzon/source/stylesheets/index.scss */
   .index .news h3 {
     font-size: 1.125em;
     line-height: 1.11111;
@@ -42,9 +43,9 @@
     color: #71a077;
     margin-top: 0.51517em;
     margin-bottom: 0.85361em; }
-  /* line 40, /projects/middleman/climatzon/source/stylesheets/index.scss */
+  /* line 41, /projects/middleman/climatzon/source/stylesheets/index.scss */
   .index .news .list {
     margin: 4.0625em 0 5em; }
-    /* line 42, /projects/middleman/climatzon/source/stylesheets/index.scss */
+    /* line 43, /projects/middleman/climatzon/source/stylesheets/index.scss */
     .index .news .list .uk-grid:last-child {
       margin-top: 0; }

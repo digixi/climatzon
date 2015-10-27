@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 4, /projects/middleman/climatzon/source/stylesheets/articles.scss */
 .articles h1 {
   margin-bottom: 1.87803em; }
@@ -25,3 +26,18 @@
 /* line 34, /projects/middleman/climatzon/source/stylesheets/articles.scss */
 .article .content .date {
   margin-bottom: 2.28364em; }
+
+/* line 39, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+ul.articles {
+  list-style-type: none;
+  padding-left: 2.375em; }
+  /* line 43, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+  ul.articles > li {
+    font-size: 1.125em;
+    margin: 1.091em 0;
+    text-indent: -1.72222em; }
+    /* line 47, /projects/middleman/climatzon/source/stylesheets/articles.scss */
+    ul.articles > li:before {
+      content: '•';
+      color: #bbbbbb;
+      padding-right: 1.22222em; }

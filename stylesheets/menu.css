@@ -22,12 +22,52 @@ header nav {
         color: #71a077;
         text-decoration: none; }
 
-/* line 28, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+/* line 27, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+.welcome-menu {
+  background: #f3f3f3; }
+  /* line 30, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+  .welcome-menu ul {
+    list-style: none;
+    margin: 5em auto 3.125em;
+    padding: 0; }
+    /* line 35, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+    .welcome-menu ul li {
+      display: block; }
+      /* line 40, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      .welcome-menu ul li.uk-active a .image, .welcome-menu ul li:hover a .image {
+        border-color: #587fad;
+        background: #587fad; }
+      /* line 41, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      .welcome-menu ul li.uk-active a .text, .welcome-menu ul li:hover a .text {
+        color: #587fad; }
+      /* line 45, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      .welcome-menu ul li a {
+        font-size: 1.125em;
+        font-weight: bold;
+        color: #3a3a3a;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        outline: 0; }
+        /* line 52, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+        .welcome-menu ul li a .text {
+          transition: 0.3s; }
+        /* line 54, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+        .welcome-menu ul li a .image {
+          transition: 0.3s;
+          width: 6.33333em;
+          height: 6.33333em;
+          background: #71a077;
+          margin: 0 auto 3.12628em;
+          border-radius: 50%;
+          border: 3px solid #71a077; }
+
+/* line 68, /projects/middleman/climatzon/source/stylesheets/menu.scss */
 .content ul.local-menu {
   padding: 0;
   margin: 2.8125em 0;
   list-style: none; }
-  /* line 32, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+  /* line 72, /projects/middleman/climatzon/source/stylesheets/menu.scss */
   .content ul.local-menu li {
     margin-left: 1.875em;
     display: inline-block;
@@ -35,17 +75,17 @@ header nav {
     line-height: 1;
     font-weight: bold;
     white-space: nowrap; }
-    /* line 37, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+    /* line 77, /projects/middleman/climatzon/source/stylesheets/menu.scss */
     .content ul.local-menu li:first-child {
       margin-left: 0; }
-    /* line 38, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+    /* line 78, /projects/middleman/climatzon/source/stylesheets/menu.scss */
     .content ul.local-menu li.active {
       position: relative; }
-      /* line 39, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      /* line 79, /projects/middleman/climatzon/source/stylesheets/menu.scss */
       .content ul.local-menu li.active a {
         color: #3a3a3a;
         text-decoration: none; }
-      /* line 41, /projects/middleman/climatzon/source/stylesheets/menu.scss */
+      /* line 81, /projects/middleman/climatzon/source/stylesheets/menu.scss */
       .content ul.local-menu li.active:after {
         position: absolute;
         bottom: -10px;
