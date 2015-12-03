@@ -1,22 +1,28 @@
 /! PARTIAL slider
-.slider-wrapper-01
-  .slider-wrapper-02 data-uk-slideshow="{autoplay: true, animation: 'scroll'}"
-    .uk-container.uk-container-center.uk-padding-remove
-      .slider
-        ul.uk-slideshow
-          li
-            img src=image_path('slide-01.png') alt=""
-            .uk-overlay-panel
-              h2 Большой опыт<br/>работы<br/>с климатическим<br/>оборудованием
-          li: img src=image_path('slide-01.png') alt=""
-            .uk-overlay-panel
-              h2 Диагностика<br/>и ремонт
-          li: img src=image_path('slide-01.png') alt=""
-            .uk-overlay-panel
-              h2 Проектирование
-          li: img src=image_path('slide-01.png') alt=""
-            .uk-overlay-panel
-              h2 Запчасти<br/>Mitsubishi<br/>Electric
-        a.slidenav.prev href="" data-uk-slideshow-item="previous"
-        a.slidenav.next href="" data-uk-slideshow-item="next"
+.slider-wrapper data-uk-slideshow="{autoplay: true, animation: 'scroll'}"
+  .uk-container.uk-container-center.uk-padding-remove
+    .slider
+      ul.uk-slideshow
+        li.slide-01
+          img src=image_path('slide-01.png') alt=""
+          .uk-overlay-panel
+            h2 Производство щитового оборудования
+        li.slide-02
+          img src=image_path('slide-02.png') alt=""
+          .uk-overlay-panel
+            h2 Обслуживание и ремонт компрессоров Bitzer, Refcomp и Frascold
+        li.slide-03
+          img src=image_path('slide-03.png') alt=""
+          .uk-overlay-panel
+            h2 Обслуживание и ремонт теплообменного оборудования
+        li.slide-04
+          img src=image_path('slide-04.png') alt=""
+          .uk-overlay-panel
+            h2 Прямые поставки запчастей &laquo;Mitsubishi&nbsp;Electric&raquo;
+        li.slide-05
+          img src=image_path('slide-05.png') alt=""
+          .uk-overlay-panel
+            h2 Авторизованный сервисный центр &laquo;Mitsubishi&nbsp;Electric&raquo;
+      a.slidenav.prev href="" data-uk-slideshow-item="previous"
+      a.slidenav.next href="" data-uk-slideshow-item="next"
 /! EOF PARTIAL slider

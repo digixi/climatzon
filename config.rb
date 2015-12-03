@@ -63,6 +63,10 @@ end
 configure :build do
   set :relative_links, false
   set :http_prefix, '/climatzon/'
+  after_build do
+    system('htmlbeautifier build/*.html')
+    system('htmlbeautifier build/**/*.html')
+  end
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

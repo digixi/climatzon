@@ -37,7 +37,7 @@ header {
 
       &.uk-active, &:hover {
         a {
-          .image { border-color: $blue-color; background: $blue-color; }
+          .image { border-color: $blue-color; background: $blue-color; transform: scale(1.2); }
           .text  { color: $blue-color; }
         }
       }

@@ -1,17 +1,9 @@
 @import "vars";
 
-.slider-wrapper-01 {
+.slider-wrapper {
   margin-top: -2px;
-  background-image: image-url('slider-bg-01.png');
-  background-repeat: no-repeat;
-  background-position: left 4px;
-
-  .slider-wrapper-02 {
-    border-top: 4px solid #8bb190;
-    background-image: image-url('slider-bg-02.png');
-    background-repeat: no-repeat;
-    background-position: right 0;
-  }
+  border-top: 4px solid #8bb190;
+  background: #e3e7ec;
 }
 
 .slider {
@@ -20,17 +12,19 @@
   position: relative;
 
   .uk-overlay-panel {
-    padding-left: em(100px);
     h2 {
-      @include font(em(48px), 60 / 48, bold);
-      text-transform: uppercase;
-      margin: auto 0;
+      @include font(em(36px), 40/36, normal, $text-color);
       display: block;
-      position: relative;
+      position: absolute;
+      left: em(100px, 36px);
+      right: 50%;
       top: 50%;
+      margin: 0;
       transform: translateY(-50%);
     }
   }
+
+  .slide-02, .slide-04, .slide-05 { h2 { top: em(80px, 36px); transform: none; } }
 
   a.slidenav {
     cursor: pointer;
